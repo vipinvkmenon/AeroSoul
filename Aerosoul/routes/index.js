@@ -27,6 +27,6 @@ module.exports = function (app) {
 			res.send('Welcome');
 		});
 
-
-app.get('/weather',routes.weather.getCurrentWeatherDetials);
+  app.get('/symptoms',routes.diseaseSymptoms.findLocAverage)
+//app.get('/weather',routes.weather.getCurrentWeatherDetials);
 };
